@@ -91,11 +91,16 @@ struct ContentView: View {
         if playerCardValue > cpuCardValue {
             //Add 1 to player score
             playerScore += 1
+            print("Added 1 to the player's score.")
             
         } else if cpuCardValue > playerCardValue {
             // Add 1 to cpu score
             cpuScore += 1
-            
+            print("Added 1 to the CPUS's score.")
+
+        } else if playerCardValue == cpuCardValue {
+            print("It's a tie, no score")
+
         }
         
         
